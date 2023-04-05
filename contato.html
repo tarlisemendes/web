@@ -1,0 +1,90 @@
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | Mundo Verde</title>
+    <link rel="stylesheet" href="./assets/css/style.cssser">
+
+</head>
+<body>
+
+    <!--tags semanticas: header, nav, main
+        footer, aside, article, section
+    permite que o navegador encontre melhor a nossa pagina-->
+    <header>
+        <div class="painel">
+            <h1><img src="./assets/img/logo-header.png" alt="Logo"></h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="produtos.html">Produtos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+
+    </header>
+
+    <main>
+        <form action="destino.php " method="get">
+            <label for="nome">Nome</label>
+            <input class="entrada" type="text" id="nome" name="nome"
+             required placeholder="Nomecompleto" minlength="5"> 
+
+            <label for="email">E-mail </label>
+            <input class="entrada" type="email" id="email" name="email" 
+            required placeholder="E-mail@dominio.com.be">
+
+            <label for="telefone">Telefone</label>
+            <input class="entrada" type="tel" id="telefone" name="telefone"
+             required placeholder="(xx)xxxxx-xxxx">
+
+            <label for="mensagem">Mensagem</label>
+            <textarea  class="entrada" name="entrada" 
+            id="mensagem" cols="65" rows="10"></textarea>
+
+            <fieldset> <!-- tag semantica que substitui o Div-->
+                <!-- no lugar de <p> ussamos <legend> -->
+                <legend>como prefere o nosso contato</legend>
+                <label for="radio-whatsapp"><input type="radio" name="contato"
+                 id="radio-whatsapp" value="Whatsapp" checked>Whatsapp</label>
+                
+                <label for="radio-telefone"><input type="radio" name="contato"
+                 id="radio-telefone" value="telefone">Telefone</label>
+
+                <label for="radio-email"><input type="radio" name="contato"
+                 id="radio-email" value="Whatsapp">E-mail</label>    
+                
+            </fieldset>
+
+            <fieldset>
+                <legend>Produtos que tenho interesse:</legend>
+                <select>
+                    <option>Cereais</option>
+                    <option>Suplementos</option>
+                    <option>Teperos</option>
+                    
+                </select>
+                </fieldset>
+
+                <label class="checkbox">
+                    <input type="checkbox" checked>
+                    Quero receber ofertas por E-mail
+                </label>
+
+
+            <input class="enviar" type="submit" value="Enviar Dados">
+
+        </form>
+    </main>
+    <footer>
+        <img src="./assets/img/logo-rodape.png" alt="Logo Mundo verde">
+
+        <!-- https:// unicode-table.com.pt-->
+        <p class="copyright">&copy;Copyright mundo Verde Ltda</p>
+
+
+    </footer>
+</body>
+</html>

@@ -1,0 +1,44 @@
+Definições:
+
+equipe de Front End
+- UX: User Experience = experiencia do usuario
+- UI: User interface = interface do usuário
+        - Figma
+        - Adobe XD
+
+-Desenvolvedor WEB : Programador + UX + (usabilidade) + UI        
+
+2.cores CSS:
+    Temos 3formas de apresentar cores
+    - atraves do nome da cor : White (Branco)
+    -notação hexadecimal : #FFFFFF(branco)
+    -RGB: vermelho, verde, azul -->255,255,255 (Branco)
+    -Site codeigo de cores: paletadecores.com
+
+3. sistemas numericos:
+    - binário : 0 1
+    - octal: 0 1 2 3 4 5 6 7 
+    - decimal: 0 1  2 3 4 5 6 7 8 9 
+    - hexadecimal :  0 1 2 3 4 5 6 7 8 9  A B C D E F 
+
+    EXEMPLO DE CORES:
+        00 = ausencia
+        FF = maximo
+
+        #000000(ausencia de cor - preto)
+        #FFFFFFF(maximo de cor)
+
+        vermelho: #FF0000
+        verde:#00FF00
+        azul: #0000FF
+
+        PadraoRGB:
+        0 = ausencai de cor
+        255 = maximo da cor
+
+        preto: rgb(0,0,0)
+        branco: rgb(255,255,255)
+        vermelho: rgb(255,0,0)
+        verde: rgb(0,255,0)
+        azul : rgb(0,0,255)   
+    

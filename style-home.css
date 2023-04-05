@@ -1,0 +1,61 @@
+
+body {
+    background: #e3fbe3;
+}
+
+.titulo-principal{
+    padding-left: 20px;
+}
+
+
+#banner{
+    width:100%;
+    height: 300px;
+}
+
+.principal {
+    background:#cbffcb;  
+    padding: 30px;  
+}
+
+p {
+    text-align: center;
+}
+
+#missao {
+    font-size: 20px;
+}
+
+em strong {
+    color: rgb(0, 255, 85);
+}
+
+.produtos{
+    background: #FFFFFF;
+    padding: 20px;
+}
+
+.titulo-centralizado{
+    text-align: center;
+}
+ul {
+    /*temos 3 opçoes de alinhamento
+        -block: vai sempre ocupar a linha toda
+        -inline: nao permite alterar espaçamento externo e interno
+        -inline-block: posso alterr espaçamentos e largura, e 
+        ocupa somente seu conteudo*/
+    display: inline-block;
+    vertical-align: top;
+    line-height: 2.5em;
+    width: 20%;
+    margin-left: 30%;
+}
+
+.itens {
+    font-style: italic;
+}
+
+.imagem-produtos {
+    width: 20%;
+}
+
