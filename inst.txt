@@ -1,0 +1,11 @@
+npm init -y
+
+criar projeto packge.json
+
+
+npm install express
+cria e instala pacotes java script
+
+npm mysql2
+
+java scripta usa (((async = assincrona)))

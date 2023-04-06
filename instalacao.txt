@@ -1,0 +1,4 @@
+Criar pasta : Crud mundo verde
+npm init -y
+npm install express
+npm install mysql2

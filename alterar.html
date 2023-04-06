@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mundo verde|cadatro</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+     integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
+     <script src="assets/js/alerta.js"></script> 
+
+     <script src="assets/js/validacao.js"></script>
+
+     <script src="assets/js/alterar.js"></script>  
+     
+     
+
+
+</head>
+<body>
+    
+    <div class="container">
+        <div id="alerta" role="alert"> </div>
+        <h2 class="mt-4"> alteração de Produto</h2>
+        
+        <form method="post" action="http://localhost:3000/produtos">
+
+            <fieldset>
+
+                <input type="hidden" name="_metodo" value="put">
+
+                <div>
+                    <label for="id">Codigo</label>
+                    <input type="text" id="id" class="form-control" readonly>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="descricao"> descricao</label>
+                    <input type="text" class="form-control" id="descricao" name="descricao" maxlength="60" required>
+
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="categoria">categoria</label>
+                    <select name="categoria" id="categoria" class="from-select">
+                        <option value="0">Cereias</option>
+                        <option value="1">suplementos</option>
+                        <option value="2">Temperos</option>
+                    </select> 
+
+                </div>
+                
+                <div class="form-group mt-2" >
+                    <label for="preco"> Preço Unitario</label>
+                    <input type="text" id="preco" name="preco" class="form-control" required>
+                </div>
+
+                <div class="form-group mt-2" >
+                    <label for="quantidade"> quantidade em estoque</label>
+                    <input type="number" id="quantidade" name="quantidade"
+                        class="form-control" min="1" max="999" required>
+                </div>
+
+                <div class="form-group mt-2">
+                    <label for="url">URL Imagem</label>
+                    <input type="text" id="url" name="url" class="form-control">
+                </div>
+
+                <div class="mt-4">
+                    <input type="button" value="Atualizar" onclick="atualizar()" class="btn btn-outline-primary">
+                    <a href="gerenciar.html" class="btn btn-outline-danger">Voltar</a>
+                </div>
+
+            </fieldset>
+    
+        </form>    
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+
+</body>
+</html>

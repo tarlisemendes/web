@@ -1,0 +1,52 @@
+comando  MYSQL
+//lista todos os bancos de dados existentes no mySQL
+SHOW DATABASES;
+
+
+// para acessar um banco
+USE MYSQL;
+
+//para listar todas as tabelas
+SHOW TABLES;
+
+//para descrever os dados de uma tabela
+DESC nome_da_tabela;
+
+//criar banco de dados 
+CREATE DATABASE nome_do_banco;
+//exemplo:
+CREATE DATABASE MundoVerde;
+
+
+USE mundo verde;
+//Vamos criar tabela produtos
+CREATE TABLE Produtos (
+   id INT PRIMARY KEY AUTO_INCREMENT,
+   descricao VARCHAR(60) NOT NULL,
+   categoria INT NOT NULL,
+   preco FLOAT NOT NULL,
+   quantidade  INT NOT NULL,
+   url VARCHAR(255)
+
+);
+
+//Categoria 
+// 0 = Cereais
+// 1 = Suplementos
+// 2 = Temperos
+
+USE mundo verde;
+desc produtos;
+
+//para inserir os dados no banco
+INSERT INTO Produtos VALUES(1,'GRANOLA COM CASTANHAS 1KG',1,40.18,
+10,'cereais.png');
+
+INSERT INTO Produtos VALUES(2,'WHEY Protein 907g',0,379.39,
+10,'suplementos.png');
+
+INSERT INTO Produtos VALUES(3,'Alho em pó 59g',0,40.18,
+10,'Temperos.png');
+
+
+SELECT * FROM Produtos;
